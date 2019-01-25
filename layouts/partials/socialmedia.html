@@ -12,8 +12,13 @@
 
 <section id="clients-logo-section">
   <div class="container">
-    <div class="row">
+    <div class="row" style="width: 50%; display: block; margin-left: auto; margin-right: auto; width: 70%;">
       <p> {{ $data.socialmedia.paragraph }} </p>
+          {{ range $data.competitoranalysis.content }}
+              <ul>
+                <li> <p> - {{ .topic }} </p> </li>
+              </ul>  
+          {{ end }}
     </div>
   </div>
 </section>

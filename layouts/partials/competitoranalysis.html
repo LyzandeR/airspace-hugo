@@ -11,12 +11,12 @@
 </section>
 
 <section id="clients-logo-section">
-  <div class="container">
-    <div class="row">
+  <div class="container" >
+    <div class="row" style="width: 50%; display: block; margin-left: auto; margin-right: auto; width: 70%;">
       <p> {{ $data.competitoranalysis.paragraph }} </p>
           {{ range $data.competitoranalysis.content }}
               <ul>
-                <li> <p> - {{ .benefit }} </p></li>
+                <li> <p> - {{ .benefit }} </p> </li>
               </ul>  
           {{ end }}
     </div>
